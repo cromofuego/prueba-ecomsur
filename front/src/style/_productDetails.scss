@@ -1,0 +1,92 @@
+.section {
+	max-width: 42rem;
+	display: flex;
+	flex-direction: column;
+	margin: 8rem auto;
+	&__title {
+		text-align: center;
+		padding-left: 1rem;
+		font-size: $font-title;
+	}
+	&__img {
+		object-fit: cover;
+		width: 100%;
+	}
+	.section-header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+
+.article {
+	&__list {
+		font-size: $font-paragraph;
+		list-style: none;
+		padding-left: 1rem;
+		padding-right: 1rem;
+		&__description {
+			margin-top: 1rem;
+			margin-bottom: 1.5rem;
+		}
+	}
+	&__rating {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		padding-right: 1rem;
+		font-size: $font-paragraph;
+		padding-left: 1rem;
+		.color-star {
+			color: $color-yellow;
+		}
+	}
+}
+
+.article > button {
+	margin: 0 auto;
+	height: 3rem;
+	cursor: pointer;
+	border: none;
+	outline: none;
+	border-radius: 0.5rem;
+	padding: 2rem;
+	margin-bottom: 1rem;
+	display: flex;
+	align-items: center;
+	transition: background 0.3s;
+}
+.article > button:hover {
+	background: $color-yellow;
+}
+
+.article > button:active {
+	background: $color-yellow;
+}
+.article button[disabled]:hover {
+	cursor: default;
+	background-color: inherit;
+}
+
+@media (min-width: 1000px) {
+	.section {
+		margin-top: 10rem;
+		justify-content: center;
+		flex-direction: row;
+		&__title {
+			margin-bottom: 0;
+		}
+		.container-info-product {
+			border: 1px solid #6c757d7d;
+			min-width: 22rem;
+		}
+		.section-header {
+			flex-direction: column;
+		}
+	}
+
+	.article > button {
+		margin-top: 8rem;
+	}
+}
