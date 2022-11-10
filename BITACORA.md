@@ -8,7 +8,7 @@
 
 # Instalar y correr la aplicación
 
-#### Instalar Bakend (Node) y Frontend (React)
+#### Instalar Bakend (Node 14.21.1) y Frontend (React)
 
 1. En el carpeta `$ root` debes correr ` $ npm install`,
    para instalar todas las dependencias del bakend.
